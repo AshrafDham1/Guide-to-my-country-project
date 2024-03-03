@@ -1,0 +1,351 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #DDE6ED;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+nav{
+    width:100%;
+    position: absolute;
+    top: 0;
+    display:flex;
+    align-items: center;
+    justify-content: end;
+}
+nav ul{
+   color:black;
+   margin-right: 75px;
+}
+nav ul li{
+    list-style-type: none;
+    display:inline-block;
+    margin-right: 1em;
+    font-size:18px;
+    line-height: 50px;
+    margin-left: 30px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    animation: colorChangerToWhite 13s infinite linear;
+}
+nav ul li a:hover{
+       color: #27374D;
+}
+@keyframes colorChangerToWhite{
+    0%{color: black;}
+    80%{color:#fff;}
+    100%{color: #fff;}
+}
+@keyframes colorChangerToBlack{
+0%{color: black;}
+50%{color:black;}
+70%{color:white;}
+100%{color: white;}  
+}
+#heroSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100dvh;
+}
+#vdBackground{
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   width:100%;
+   height: fit-content;
+   z-index: -1;
+}
+#name{
+    font-size: 50px;
+    color: #e7ecef;
+    font-weight: 700; 
+    animation: colorChangerToBlack 13s infinite linear;
+}
+ 
+#button1 {
+    background: #8b8c89;
+    border-radius: 999px;
+    box-shadow: #8b8c89 0 10px 20px -10px;
+    color: #e7ecef;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    width: fit-content;
+    border: 0;
+    margin-bottom: 25%;
+  }
+  #button1:hover{
+    background: grey;
+    box-shadow: grey 0 10px 20px -10px;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+.subtitles{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    column-gap: 1rem;
+    color: #274c77;
+}
+.subtitles::before , .subtitles::after{
+    content: "";
+    height: 2px;
+    background-color: #27374D;
+    display: block;
+}
+
+
+#map{
+    position:relative;
+    width: 450px;
+    height: 300px;;
+    margin-left: 50px;
+    border: #8b8c89 solid 1px;
+    border-radius: 20px;
+
+}
+.location{
+    position:relative;
+    width: 500px;
+    color: #27374D;
+   font-size: 18px;
+   font-weight: 700;
+   font-family: sans-serif;
+   margin:0 100px ;
+   margin-top: 3dvh;
+   line-height: 1.5em;
+   margin-right: -100px;
+
+}
+#locTitle{
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: -1em;
+}
+#GeographicCoor{
+    margin-bottom: 18px;
+}
+
+#frame{
+    border: 2px solid #526D82 ;
+    width: min-content;
+    height: min-content;
+    margin-right: -250px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+#map_text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: top;
+    
+}
+
+
+
+
+#img1{
+    color:black;
+    width: 20dvw;
+    height: 12dvh;
+    transform: scaleY(-1);
+    margin-top: 3dvh;
+    margin-left: 10em;
+}
+section{
+    padding: 15px 0;
+}
+#quickInfo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 30vh 30vh;
+    justify-items: center;
+    align-items: center;
+    width: 100dvw;
+    margin-right: 0;
+    row-gap: 50px;
+    margin-top: 15px;
+}
+.circle {
+    width: 100px; 
+    height: 100px; 
+    background-color: #274c77; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle i {
+    color: #fff; 
+    font-size: 50px; 
+}
+
+.secTitle , .secParaghraph{
+    text-align: center;
+    font-family: sans-serif;
+}
+.theContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #526D82;
+    opacity: 1.2;
+    color:#fff;
+    width: 200px;
+    height: 250px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+
+.timebtn{
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 17px 30px;
+    border: 0;
+    color: #fff;
+    font-size: 17.5px;
+    border: 2px solid transparent;
+    border-color: #274c77;
+    color: #274c77;
+    background: transparent;
+    font-weight: 800;
+    line-height: 30px;
+   border-radius: 30px;  
+   position: relative; 
+   
+}
+
+.timebtn:hover {
+    background-color: #274c77;
+    color: #fff;
+}
+
+#timeContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.line{
+    height: 2px;
+    background-color: #274c77;
+    width: 30px;
+}
+#infoContainer{
+    display: flex;
+    flex-direction: row;
+    height: 220px;
+}
+.info{
+    position: relative;
+    width: 200px;
+    height: fit-content;
+    background-color: #27374D;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 25px;
+    margin-left: 0px;
+    margin-top: 15px;
+    visibility: hidden;
+    border-radius: 30px;
+    margin-bottom: -5dvh !important;
+}
+.visibility{
+    position: relative;
+    width: 200px;
+    height: fit-content;
+    background-color: #27374D;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 25px;
+    margin-left: 0px;
+    margin-top: 15px;
+    visibility: visible;
+    border-radius: 30px;
+}
+#section2{
+    background-color: rgba(231,240,247,1.5);
+    
+}
+footer{
+    margin-top: 10dvh;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    background-color: #274c77;
+    display: grid;
+    align-items: center;
+    grid-template-areas:
+     "flag home attractions culture food"
+     ". .  copyright copyright copyright";
+     justify-items: left;
+     font-size: 20px;    
+}
+.flag{
+    grid-area: flag;
+    width:20dvh;
+    height: 10dvh;
+    margin: 2rem;
+    margin-left: 3rem;
+}
+.home a {
+    grid-area: home;
+    width: 50px;
+    text-decoration: none;
+    color: #fff;
+}
+.attractions a{
+    grid-area: attractions;
+    width: 50px;
+    text-decoration: none;
+    color: #fff;
+
+}
+.culture a {
+    grid-area: culture;
+    width: 50px;
+    text-decoration: none;
+    color: #fff;
+
+}
+.food a{
+    grid-area: food;
+    width: 50px;
+    text-decoration: none;
+    color: #fff;
+
+}
+.copyright{
+    grid-area: copyright;
+    color: #fff;
+    position: relative;
+
+}
+#preloader{
+    background: #000000 url(/assets/clock.gif) no-repeat center center;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index:100;
+}

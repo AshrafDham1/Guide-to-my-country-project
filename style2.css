@@ -1,0 +1,124 @@
+#imgbackground{
+    position: absolute;
+   margin: 0;
+   padding: 0;
+   width:100%;
+   height: fit-content;
+   z-index: -1;
+
+}
+nav ul{
+    color:white !important;
+    margin-right: 75px;
+ }
+ nav ul li a{
+    color: white;
+    text-decoration: none;
+    animation: none !important;
+}
+#name{ 
+    animation: none !important;
+}
+#heroParagraph{
+    color: #eeeeee  ;
+    width: 600px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.01); 
+    backdrop-filter: blur(5px); 
+    padding: 10px; 
+    border-radius: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+#heroSection{
+    height:900px !important;
+}
+
+
+.attcontainer{
+    display: flex;
+    flex-flow:row wrap;
+    gap: -5px;
+    justify-content: center;
+}
+.attraction{
+    background-image: url("/assets/photo1.jpg"); 
+}
+.attheader, .attparaghraph{
+    background-color: rgba(255, 255, 255, 0.082); 
+    backdrop-filter: blur(5px); 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-weight: 600; */
+    padding: 10px;
+    border-radius: 15px;
+    line-height: 1.35;
+    font-size: 24px;
+}
+.attheader{
+    background-color: rgba(255, 255, 255, 0); 
+}
+.attraction2{
+    background-image: url("/assets/photo2.jpg");  
+}
+
+.attraction3{
+    background-image: url("/assets/photo3.jpg"); 
+}
+.attraction4{
+    background-image: url("/assets/photo4.jpg"); 
+}
+.attraction5{
+    background-image: url("/assets/photo5.jpg"); 
+}
+.attraction6{
+    background-image: url("/assets/photo6.jpg"); 
+}
+.attraction7{
+    background-image: url("/assets/photo7.avif");
+}
+.attraction8{ 
+    background-image: url("/assets/photo8.jpeg"); 
+    
+
+}
+.allAttractions{
+    position: relative;
+    padding: 20px;
+    margin: 10px;
+    background-size: cover; 
+    background-position: center; 
+    width: 43dvw;
+    height:475px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: #000000;
+    border-radius: 25px;
+}
+
+.attleft{
+    margin-top: -100px;
+}
+
+#middleSection{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.middleParagraph{
+    text-align: center;
+    width: 40dvw;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   font-weight: 400;
+   font-size: 20px;
+}
+#vdParagraph{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
